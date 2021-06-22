@@ -1,14 +1,15 @@
+from dotenv import load_dotenv
+import random
+import os
+from discord.ext import commands
+import discord
+from datetime import datetime
+from dateutil import tz
+import dateutil.parser
 import pytz
 import json
 import requests
-import dateutil.parser
-from dateutil import tz
-from datetime import datetime
-import discord
-from discord.ext import commands
-import os
-import random
-from dotenv import load_dotenv
+
 load_dotenv()
 """
 to do
