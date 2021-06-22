@@ -82,43 +82,6 @@ async def on_ready():
 
 bot.run(TOKEN)
 
-# def leet_code_contests():
-#     param_query = f"/?username=frexpe&api_key={C_API}"
-#     parameters = {"limit": 4, "resource": "leetcode.com", "order_by": "-start"}
-#     response = requests.get(
-#         f"https://clist.by:443/api/v2/contest/{param_query}", params=parameters)
-
-#     contests = response.json()["objects"]
-#     from_zone = tz.tzutc()
-#     to_zone = tz.tzlocal()
-#     # utc = datetime.strptime('2011-01-21 02:37:21', '%Y-%m-%d %H:%M:%S')
-#     # utc = utc.replace(tzinfo=from_zone)
-
-#     # nepal_time = utc.astimezone(to_zone)
-
-#     # print(nepal_time.time(), '\n')
-#     utc_time = datetime.now()
-
-#     # print(utc_time)
-#     for single in contests:
-#         event_name = single["event"]
-#         link = single["href"]
-#         duration = int(single['duration'])
-#         duration = duration/(60*60)
-#         starts = dateutil.parser.parse(single['start'])
-#         utc_start_time = starts.replace(tzinfo=from_zone)
-#         nepal_start_time = utc_start_time.astimezone(to_zone)
-#         if (nepal_start_time.date()-utc_time.date()).days < 7 and (nepal_start_time.date()-utc_time.date()).days >= 0:
-#             print(event_name)
-#             print(
-#                 f"Date: {nepal_start_time.date()} ({(nepal_start_time.date()-utc_time.date()).days} days left)  Start Time: {nepal_start_time.time()}\nDuration: {duration} hours")
-#             print(f"Registration link: {link}")
-
-#             print("\nNOTE: ALL TIME AND DATE ARE IN LOCAL TIMEZONE")
-#             print("\n")
-#     # print(abs(nepal_start_time.date()-utc_time.date()).days)
-#     # print(nepal_start_time.date(), nepal_start_time.time(), sep=" ")
-# requirements:
 """
    #  1. contest name
    #  2. registration Links
