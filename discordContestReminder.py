@@ -12,7 +12,7 @@ load_dotenv()
 """
 to do
 1. automatic reminder
-2. different contests
+2. different contests : ✅
 3. opt in for dm reminder
 4. if opted in a stroage of people who have opted in 
 5. sending the message in required time (befor 2 hr and before 15 min)
